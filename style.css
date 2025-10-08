@@ -149,10 +149,20 @@ p {
 }
 
 #projetos img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 0.75rem;
+    width: 80%; /* Diminui o tamanho da imagem */
+    max-width: 500px; /* Define limite para não ficar muito grande em telas amplas */
+    display: block;
+    margin: 0 0 1rem 0; /* Centraliza e adiciona espaçamento inferior */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.3); /* Efeito de brilho suave azul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#projetos img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(30, 144, 255, 0.5);
+}
+
 
 /* ===== CONTATO ===== */
 form {
