@@ -64,11 +64,17 @@ nav li a {
 }
 
 #hero img {
-    max-width: 200px;
+    max-width: 250px; /* ou 300px, se quiser mais destaque */
     border-radius: 50%;
     border: 3px solid #1e90ff;
     margin-top: 1rem;
+    transition: transform 0.3s ease; /* Efeito suave opcional */
 }
+
+#hero img:hover {
+    transform: scale(1.05); /* Efeito leve ao passar o mouse */
+}
+
 
 /* Botão ver projetos */
 .btn {
@@ -91,6 +97,10 @@ section {
     padding: 4rem 10%;
 }
 
+#sobre {
+    padding-bottom: 2rem; /* reduz de 4rem para 2rem */
+}
+
 h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
@@ -100,6 +110,30 @@ h2 {
 p {
     margin-bottom: 1rem;
     color: #d9d9d9;
+}
+
+#sobre ul {
+    margin-left: 2rem; /* Recuo padrão */
+    list-style-position: inside; /* Deixa o marcador alinhado */
+}
+
+/* Ícones para as habilidades técnicas */
+#sobre h3:nth-of-type(1) + ul li::before {
+    content: "💻 "; /* Ícone antes de cada habilidade técnica */
+    color: #1e90ff; /* Cor do destaque */
+    font-size: 1rem;
+}
+
+/* Soft Skills */
+#sobre h3:nth-of-type(2) + ul li::before {
+    content: "🌟 ";
+    color: #1e90ff;
+}
+
+/* Linha do Tempo */
+#sobre h3:nth-of-type(3) + ul li::before {
+    content: "⏳ ";
+    color: #1e90ff;
 }
 
 /* ===== PROJETOS ===== */
