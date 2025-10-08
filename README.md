@@ -1,7 +1,7 @@
 # 🚀 Portfólio Web - Pedro Lucas Pereira da Silva
 
 <p align="center">
-  <a href="[LINK DO GITHUB PAGES AQUI]" target="_blank">
+  <a href="https://pedro-ani-lucas.github.io/HTML/" target="_blank">
     <img src="img/Foto-Pedro.jpg" alt="Foto de Perfil de Pedro Lucas" width="150" style="border-radius: 50%;">
   </a>
 </p>
@@ -42,9 +42,7 @@ As tecnologias e conceitos principais utilizados neste projeto incluem:
 
 Você pode visualizar a versão publicada deste portfólio diretamente através do GitHub Pages:
 
-**[Clique aqui para acessar o Portfólio Web]([LINK DO GITHUB PAGES AQUI])**
-
-*Lembre-se de substituir o `[LINK DO GITHUB PAGES AQUI]` pelo endereço real do seu site após a publicação.*
+**[Clique aqui para acessar o Portfólio Web](https://pedro-ani-lucas.github.io/HTML/)**
 
 ## 💻 Como Rodar o Projeto Localmente
 
@@ -75,7 +73,3 @@ Se você tiver interesse em meu trabalho, convites para projetos, ou oportunidad
 * **Email:** `plucascontato22@gmail.com`
 
 ---
-
-## 📝 Licença
-
-Este projeto está sob a licença **MIT** - veja o arquivo [LICENSE.md] para mais detalhes. *(É recomendado criar um arquivo LICENSE.md no seu repositório, a licença MIT é comumente usada e permite que outros usem e modifiquem o código).*
