@@ -13,6 +13,14 @@ body {
     line-height: 1.6;
 }
 
+html {
+    scroll-behavior: smooth; /* rolagem suave nos links do menu */
+}
+
+button, a {
+    touch-action: manipulation; /* melhora resposta ao toque */
+}
+
 /* Links */
 a {
     color: #1e90ff; /* Azul destaque */
@@ -52,9 +60,11 @@ nav li a {
 
 /* ===== HERO ===== */
 #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(to right, #0d0d0d, #111);
+    gap: 1rem;
 }
 
 #hero h2 {
@@ -163,6 +173,22 @@ p {
     box-shadow: 0 0 25px rgba(30, 144, 255, 0.5);
 }
 
+/* Layout mais fluido para os projetos */
+#projetos .projeto {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* permite quebrar linha se faltar espaço */
+}
+
+#projetos .projeto img {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+#projetos .projeto p {
+    flex: 2 1 300px;
+}
 
 /* ===== CONTATO ===== */
 form {
@@ -209,18 +235,32 @@ footer a {
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
-    header {
+    /* Centraliza tudo na seção hero */
+    #hero {
+        padding: 2.5rem 1rem;
+    }
+
+    #hero img {
+        max-width: 180px;
+    }
+
+    /* Deixa os projetos empilhados e centralizados */
+    #projetos .projeto {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
     }
 
-    nav ul {
-        flex-direction: column;
-        gap: 0.75rem;
+    #projetos .projeto img {
+        width: 90%;
     }
 
-    #hero h2 {
-        font-size: 1.5rem;
+    /* Ajusta listas para caberem melhor */
+    #sobre ul {
+        margin-left: 1rem;
+    }
+
+    /* Melhora legibilidade do texto */
+    body {
+        font-size: 0.95rem;
     }
 }
