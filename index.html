@@ -15,6 +15,7 @@
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#interatividade">Interatividade</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -77,6 +78,35 @@
         </div>
     </section>
 
+    <!-- Interatividade -->
+    <section id="interatividade">
+    <h2>Interatividade com JavaScript</h2>
+
+    <button id="toggle-theme">🌙 Modo Escuro</button>
+
+    <!-- Campo de mensagem -->
+    <div class="mensagem-container">
+        <h3>Mensagem Dinâmica</h3>
+        <input type="text" id="mensagem-input" placeholder="Digite sua mensagem aqui...">
+        <div class="botoes">
+            <button id="mostrar-btn">Mostrar</button>
+            <button id="limpar-btn">Limpar</button>
+        </div>
+        <div id="mensagem-exibida" class="caixa"></div>
+    </div>
+
+    <!-- Contador -->
+    <div class="contador-container">
+        <h3>Contador Numérico</h3>
+        <div id="contador">0</div>
+        <div class="botoes">
+            <button id="incrementar">+</button>
+            <button id="zerar">Zerar</button>
+            <button id="decrementar">-</button>
+        </div>
+    </div>
+    </section>
+
     <!-- Contato -->
     <section id="contato">
         <h2>Contato</h2> 
@@ -126,5 +156,6 @@
     });
     </script>
 
+    <script src="script.js"></script>
 </body>
 </html>

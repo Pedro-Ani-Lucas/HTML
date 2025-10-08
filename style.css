@@ -8,25 +8,31 @@
 /* ===== BASE ===== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0d0d0d; /* Preto suave */
+    background-color: #0d0d0d;
+    /* Preto suave */
     color: #f2f2f2;
     line-height: 1.6;
 }
 
 html {
-    scroll-behavior: smooth; /* rolagem suave nos links do menu */
+    scroll-behavior: smooth;
+    /* rolagem suave nos links do menu */
 }
 
-button, a {
-    touch-action: manipulation; /* melhora resposta ao toque */
+button,
+a {
+    touch-action: manipulation;
+    /* melhora resposta ao toque */
 }
 
 /* Links */
 a {
-    color: #1e90ff; /* Azul destaque */
+    color: #1e90ff;
+    /* Azul destaque */
     text-decoration: none;
     transition: color 0.3s ease;
 }
+
 a:hover {
     color: #66b3ff;
 }
@@ -74,15 +80,18 @@ nav li a {
 }
 
 #hero img {
-    max-width: 250px; /* ou 300px, se quiser mais destaque */
+    max-width: 250px;
+    /* ou 300px, se quiser mais destaque */
     border-radius: 50%;
     border: 3px solid #1e90ff;
     margin-top: 1rem;
-    transition: transform 0.3s ease; /* Efeito suave opcional */
+    transition: transform 0.3s ease;
+    /* Efeito suave opcional */
 }
 
 #hero img:hover {
-    transform: scale(1.05); /* Efeito leve ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito leve ao passar o mouse */
 }
 
 
@@ -97,6 +106,7 @@ nav li a {
     font-weight: bold;
     transition: background 0.3s ease, transform 0.2s ease;
 }
+
 .btn:hover {
     background: #66b3ff;
     transform: scale(1.05);
@@ -108,7 +118,8 @@ section {
 }
 
 #sobre {
-    padding-bottom: 2rem; /* reduz de 4rem para 2rem */
+    padding-bottom: 2rem;
+    /* reduz de 4rem para 2rem */
 }
 
 h2 {
@@ -123,25 +134,29 @@ p {
 }
 
 #sobre ul {
-    margin-left: 2rem; /* Recuo padrão */
-    list-style-position: inside; /* Deixa o marcador alinhado */
+    margin-left: 2rem;
+    /* Recuo padrão */
+    list-style-position: inside;
+    /* Deixa o marcador alinhado */
 }
 
 /* Ícones para as habilidades técnicas */
-#sobre h3:nth-of-type(1) + ul li::before {
-    content: "💻 "; /* Ícone antes de cada habilidade técnica */
-    color: #1e90ff; /* Cor do destaque */
+#sobre h3:nth-of-type(1)+ul li::before {
+    content: "💻 ";
+    /* Ícone antes de cada habilidade técnica */
+    color: #1e90ff;
+    /* Cor do destaque */
     font-size: 1rem;
 }
 
 /* Soft Skills */
-#sobre h3:nth-of-type(2) + ul li::before {
+#sobre h3:nth-of-type(2)+ul li::before {
     content: "🌟 ";
     color: #1e90ff;
 }
 
 /* Linha do Tempo */
-#sobre h3:nth-of-type(3) + ul li::before {
+#sobre h3:nth-of-type(3)+ul li::before {
     content: "⏳ ";
     color: #1e90ff;
 }
@@ -154,17 +169,22 @@ p {
     margin-bottom: 1.5rem;
     transition: transform 0.3s ease;
 }
+
 #projetos div.projeto:hover {
     transform: translateY(-5px);
 }
 
 #projetos img {
-    width: 80%; /* Diminui o tamanho da imagem */
-    max-width: 500px; /* Define limite para não ficar muito grande em telas amplas */
+    width: 80%;
+    /* Diminui o tamanho da imagem */
+    max-width: 500px;
+    /* Define limite para não ficar muito grande em telas amplas */
     display: block;
-    margin: 0 0 1rem 0; /* Centraliza e adiciona espaçamento inferior */
+    margin: 0 0 1rem 0;
+    /* Centraliza e adiciona espaçamento inferior */
     border-radius: 12px;
-    box-shadow: 0 0 15px rgba(30, 144, 255, 0.3); /* Efeito de brilho suave azul */
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.3);
+    /* Efeito de brilho suave azul */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -178,7 +198,8 @@ p {
     display: flex;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap; /* permite quebrar linha se faltar espaço */
+    flex-wrap: wrap;
+    /* permite quebrar linha se faltar espaço */
 }
 
 #projetos .projeto img {
@@ -198,7 +219,8 @@ form {
     margin-top: 2rem;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 0.75rem;
     border-radius: 8px;
     border: none;
@@ -235,6 +257,7 @@ footer a {
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 768px) {
+
     /* Centraliza tudo na seção hero */
     #hero {
         padding: 2.5rem 1rem;
@@ -262,5 +285,331 @@ footer a {
     /* Melhora legibilidade do texto */
     body {
         font-size: 0.95rem;
+    }
+}
+
+/* ===== INTERATIVIDADE ===== */
+#interatividade {
+    padding: 4rem 10%;
+    background: linear-gradient(to right, #0d0d0d, #111);
+    border-top: 1px solid #1e90ff;
+}
+
+#interatividade h2 {
+    color: #1e90ff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#interatividade h3 {
+    color: #66b3ff;
+    margin-bottom: 1rem;
+}
+
+#toggle-theme {
+    display: block;
+    margin: 0 auto 2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    background: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#toggle-theme:hover {
+    background: #66b3ff;
+}
+
+.mensagem-container,
+.contador-container {
+    background: #111;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: none;
+    background: #1a1a1a;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.botoes {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background: #1e90ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #66b3ff;
+    transform: scale(1.05);
+}
+
+#mensagem-exibida {
+    min-height: 60px;
+    padding: 1rem;
+    border: 1px solid #1e90ff;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+#contador {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ===== MODO CLARO ===== */
+body.light-mode {
+    background: #f5f5f5;
+    color: #111;
+}
+
+/* Cabeçalho */
+body.light-mode header {
+    background: #e3e3e3;
+}
+
+body.light-mode header h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: #1e90ff;
+    /* mantém o azul de destaque */
+}
+
+/* Seções */
+body.light-mode section {
+    background: #fff;
+    color: #111;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+/* Containers dentro das seções */
+body.light-mode .projeto,
+body.light-mode .mensagem-container,
+body.light-mode .contador-container {
+    background: #fff;
+    border: 1px solid #1e90ff;
+}
+
+/* Bordas e divisores */
+body.light-mode #mensagem-exibida,
+body.light-mode input,
+body.light-mode textarea {
+    border: 1px solid #1e90ff;
+}
+
+/* Texto dentro das caixas */
+body.light-mode #mensagem-exibida {
+    color: #111;
+    background: #f9f9f9;
+}
+
+/* Links */
+body.light-mode a {
+    color: #1e90ff;
+}
+
+body.light-mode a:hover {
+    color: #0077ff;
+}
+
+/* Botões */
+body.light-mode button {
+    background: #1e90ff;
+    color: #fff;
+}
+
+body.light-mode button:hover {
+    background: #66b3ff;
+}
+
+/* ===== FORMULÁRIO ===== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    background: #111;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.2);
+}
+
+form label {
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #1e90ff;
+    background: #1a1a1a;
+    color: #f2f2f2;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Campos no modo claro */
+body.light-mode form {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode input,
+body.light-mode textarea {
+    background: #f9f9f9;
+    color: #111;
+}
+
+/* Botão de enviar */
+button[type="submit"] {
+    align-self: flex-start;
+    background: #1e90ff;
+    color: #fff;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background: #66b3ff;
+    transform: scale(1.05);
+}
+
+
+/* ============================
+   OVERRIDES FINAS PARA MODO CLARO
+   COLE NO FINAL DO style.css
+   ============================ */
+
+body.light-mode {
+    background: #f5f5f5;
+    color: #111;
+}
+
+/* Cabeçalho / títulos / links */
+body.light-mode header {
+    background: #e3e3e3;
+}
+
+body.light-mode header h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: #1e90ff;
+    /* destaque azul */
+}
+
+body.light-mode a {
+    color: #1e90ff;
+}
+
+body.light-mode a:hover {
+    color: #0077ff;
+}
+
+/* Seções e containers */
+body.light-mode section,
+body.light-mode #interatividade {
+    background: #fff;
+    color: #111;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+/* Projetos / cards / containers específicos */
+body.light-mode #projetos div.projeto,
+body.light-mode .projeto,
+body.light-mode .mensagem-container,
+body.light-mode .contador-container,
+body.light-mode form {
+    background: #fff;
+    color: #111;
+    order: 1px solid #1e90ff;
+    box-shadow: 0 6px 18px rgba(30, 144, 255, 0.06);
+}
+
+/* Interatividade: remover gradiente escuro no light */
+body.light-mode #interatividade {
+    background: transparent;
+    border-top: 1px solid rgba(30, 144, 255, 0.15);
+}
+
+/* Inputs / textarea / exibidor de mensagem */
+body.light-mode input,
+body.light-mode textarea,
+body.light-mode #mensagem-exibida {
+    background: #f9f9f9;
+    color: #111;
+    border: 1px solid #1e90ff;
+}
+
+/* Forçar tipos comuns também (maior especificidade) */
+body.light-mode input[type="text"],
+body.light-mode input[type="email"],
+body.light-mode textarea {
+    background: #f9f9f9;
+    color: #111;
+    border: 1px solid #1e90ff;
+}
+
+/* Botões */
+body.light-mode button,
+body.light-mode .btn,
+body.light-mode button[type="submit"],
+body.light-mode #toggle-theme {
+    background: #1e90ff;
+    color: #fff;
+}
+
+body.light-mode button:hover {
+    background: #66b3ff;
+}
+
+/* Parágrafos e listas */
+body.light-mode p,
+body.light-mode li {
+    color: #333;
+}
+
+/* Imagens dos projetos (sombra mais sutil em light) */
+body.light-mode #projetos img {
+    box-shadow: 0 8px 22px rgba(30, 144, 255, 0.06);
+}
+
+/* Ajustes finais para garantir visibilidade do label do formulário */
+body.light-mode form label {
+    color: #1e90ff;
+}
+
+/* Responsivo: manter coerência */
+@media (max-width: 768px) {
+
+    body.light-mode #projetos .projeto,
+    body.light-mode .projeto {
+        background: #fff;
     }
 }
